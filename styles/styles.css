@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-primary-color: #333333;
+    --light-primary-color: #F5F5F5;
+    --primary-color: #6e5494;
+    --text-icons: #FFFFFF;
+    --accent-color: #2b7489;
+    --primary-text: #24292e;
+    --secondary-text: #586069;
+    --divider-color: #e1e4e8;
+  }
+  
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light-primary-color);
+    color: var(--text-color);
+}
+
+.header{
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+    color: var(--text-color);
+    background-color: var(--divider-color);
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+a{
+    text-decoration: none;
+    background-color: var(--light-primary-color);
+    border-style: circle;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+a:hover{
+    outline: var(--accent-color) solid 2px;
+    outline-offset: -2px;
+    border-radius: 0.5rem;
+    border-style: circle;
+    padding: 0.3rem;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin:20px 10px 10px 20px;
+}
+
+.name{
+    color: var(--accent-color);
+}
+
+#welcome{
+    text-align: justify;
+    margin:20px 10px 10px 20px;
+    font-size: 1.2rem;
+    color: var(--primary-text);
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.active{
+    display: flex;
+    direction: ltr;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: var(--accent-color); 
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--accent-color);
+    text-decoration-style: solid;
+}
+footer{
+    background-color: var(--dark-primary-color);
+    color: var(--text-icons);
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.footer{
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: var(--text-icons);    
+}
